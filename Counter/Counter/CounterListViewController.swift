@@ -63,4 +63,14 @@ extension CounterListViewController {
         
         return cell
     }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        guard editingStyle == .Delete else { return }
+        
+        dispatch?(.Delete(index: indexPath.row))
+    }
 }

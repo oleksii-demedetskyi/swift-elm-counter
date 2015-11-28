@@ -15,6 +15,7 @@ struct CounterList {
     enum Action {
         case UpdateCounter(index : Int, action: Counter.Action)
         case Add
+        case Delete(index: Int)
     }
     
     static func update(var state: State, action: Action) -> State {
@@ -25,6 +26,9 @@ struct CounterList {
             
         case .Add :
             state.append(Counter.State(0))
+            
+        case .Delete(let index) :
+            state.removeAtIndex(index)
             
         }
         
