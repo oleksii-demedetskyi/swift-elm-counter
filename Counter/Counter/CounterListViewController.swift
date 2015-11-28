@@ -9,7 +9,9 @@
 import UIKit
 
 class CounterListViewController : UITableViewController {
+    
     var state : CounterList.State? { didSet { render() } }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,29 +27,6 @@ class CounterListViewController : UITableViewController {
     @IBAction func add() {
         dispatch?(.Add)
     }
-}
-
-class CounterCell : UITableViewCell {
-    var state : Counter.State? { didSet { render() } }
-    
-    @IBOutlet var value : UILabel!
-    
-    func render() {
-        value.text = state.map { String($0) } ?? "#"
-    }
-    
-    var dispatch : Counter.Dispatch?
-    
-    @IBAction func increment() {
-        dispatch?(.Increment)
-    }
-    
-    @IBAction func decrement() {
-        dispatch?(.Decrement)
-    }
-}
-
-extension CounterListViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return state?.count ?? 0
