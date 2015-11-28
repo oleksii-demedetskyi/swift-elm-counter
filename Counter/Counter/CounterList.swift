@@ -14,12 +14,18 @@ struct CounterList {
     
     enum Action {
         case UpdateCounter(index : Int, action: Counter.Action)
+        case Add
     }
     
     static func update(var state: State, action: Action) -> State {
         switch action {
+            
         case let .UpdateCounter(index, act) :
             state[index] = Counter.update(state[index], action: act)
+            
+        case .Add :
+            state.append(Counter.State(0))
+            
         }
         
         return state

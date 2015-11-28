@@ -21,6 +21,10 @@ class CounterListViewController : UITableViewController {
     }
     
     var dispatch : CounterList.Dispatch?
+    
+    @IBAction func add() {
+        dispatch?(.Add)
+    }
 }
 
 class CounterCell : UITableViewCell {

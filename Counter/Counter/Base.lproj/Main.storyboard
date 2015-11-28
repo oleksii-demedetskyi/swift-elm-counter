@@ -9,7 +9,7 @@
         <scene sceneID="0we-9D-uho">
             <objects>
                 <tableViewController id="JYK-R0-0qq" customClass="CounterListViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZiL-By-zE7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZiL-By-zE7">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -68,7 +68,13 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Counters" id="eti-sr-cce"/>
+                    <navigationItem key="navigationItem" title="Counters" id="eti-sr-cce">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Jc-8I-PCp">
+                            <connections>
+                                <action selector="add" destination="JYK-R0-0qq" id="yad-Nd-2Kh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="529-qo-1Nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
