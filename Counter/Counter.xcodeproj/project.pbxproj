@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482053371C0A20E000E0E46A /* CounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482053361C0A20E000E0E46A /* CounterList.swift */; settings = {ASSET_TAGS = (); }; };
+		482053391C0A276E00E0E46A /* CounterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482053381C0A276E00E0E46A /* CounterListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		48D57F311BFF9DCF002473E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D57F301BFF9DCF002473E1 /* AppDelegate.swift */; };
-		48D57F331BFF9DCF002473E1 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D57F321BFF9DCF002473E1 /* CounterViewController.swift */; };
 		48D57F361BFF9DCF002473E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D57F341BFF9DCF002473E1 /* Main.storyboard */; };
 		48D57F381BFF9DCF002473E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D57F371BFF9DCF002473E1 /* Assets.xcassets */; };
 		48D57F3B1BFF9DCF002473E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D57F391BFF9DCF002473E1 /* LaunchScreen.storyboard */; };
@@ -27,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482053361C0A20E000E0E46A /* CounterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterList.swift; sourceTree = "<group>"; };
+		482053381C0A276E00E0E46A /* CounterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterListViewController.swift; sourceTree = "<group>"; };
 		48D57F2D1BFF9DCE002473E1 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D57F301BFF9DCF002473E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48D57F321BFF9DCF002473E1 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		48D57F351BFF9DCF002473E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48D57F371BFF9DCF002473E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D57F3A1BFF9DCF002473E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				48D57F301BFF9DCF002473E1 /* AppDelegate.swift */,
-				48D57F321BFF9DCF002473E1 /* CounterViewController.swift */,
 				48D57F341BFF9DCF002473E1 /* Main.storyboard */,
 				48D57F371BFF9DCF002473E1 /* Assets.xcassets */,
 				48D57F391BFF9DCF002473E1 /* LaunchScreen.storyboard */,
 				48D57F3C1BFF9DCF002473E1 /* Info.plist */,
 				48D57F501BFF9F9E002473E1 /* Counter.swift */,
+				482053361C0A20E000E0E46A /* CounterList.swift */,
+				482053381C0A276E00E0E46A /* CounterListViewController.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -199,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48D57F331BFF9DCF002473E1 /* CounterViewController.swift in Sources */,
+				482053371C0A20E000E0E46A /* CounterList.swift in Sources */,
+				482053391C0A276E00E0E46A /* CounterListViewController.swift in Sources */,
 				48D57F511BFF9F9E002473E1 /* Counter.swift in Sources */,
 				48D57F311BFF9DCF002473E1 /* AppDelegate.swift in Sources */,
 			);
@@ -389,6 +393,7 @@
 				48D57F4C1BFF9DCF002473E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48D57F4D1BFF9DCF002473E1 /* Build configuration list for PBXNativeTarget "CounterTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +402,7 @@
 				48D57F4F1BFF9DCF002473E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,10 +8,6 @@
 
 import UIKit
 
-class Store {
-    
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,14 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        var state : Counter.State = 0
+        let nvc = window?.rootViewController as! UINavigationController
+        let vc = nvc.topViewController as! CounterListViewController
         
-        let vc = window?.rootViewController as! CounterViewController
-        
-        vc.state = state
+        vc.state = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
         vc.dispatch = { [unowned vc] action in
-            state = Counter.update(state, action: action)
-            vc.state = state
+            vc.state = CounterList.update(vc.state!, action: action)
         }
         
         return true

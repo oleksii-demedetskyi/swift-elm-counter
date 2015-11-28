@@ -1,66 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nih-0T-E48">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Counter View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Counters-->
+        <scene sceneID="0we-9D-uho">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CounterViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <tableViewController id="JYK-R0-0qq" customClass="CounterListViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZiL-By-zE7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syf-oM-Tb2">
-                                <rect key="frame" x="147.5" y="118" width="25" height="48"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsW-Vw-gom">
-                                <rect key="frame" x="145" y="29" width="30" height="61"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="increment" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsC-U0-aLI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmu-OP-qhT">
-                                <rect key="frame" x="145" y="206" width="30" height="61"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="decrement" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVO-dL-asu"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nmu-OP-qhT" firstAttribute="top" secondItem="Syf-oM-Tb2" secondAttribute="bottom" constant="40" id="7rz-HI-1HT"/>
-                            <constraint firstItem="nmu-OP-qhT" firstAttribute="centerX" secondItem="Syf-oM-Tb2" secondAttribute="centerX" id="KVQ-rF-b2r"/>
-                            <constraint firstItem="SsW-Vw-gom" firstAttribute="centerX" secondItem="Syf-oM-Tb2" secondAttribute="centerX" id="ied-7O-eKO"/>
-                            <constraint firstItem="Syf-oM-Tb2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jDS-tI-E7s"/>
-                            <constraint firstItem="Syf-oM-Tb2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1 : 2" id="op5-cY-i98"/>
-                            <constraint firstItem="Syf-oM-Tb2" firstAttribute="top" secondItem="SsW-Vw-gom" secondAttribute="bottom" constant="28" id="sCS-u0-aw6"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="value" destination="Syf-oM-Tb2" id="7HW-Mx-cro"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="counter cell" id="UeB-fx-IZo" customClass="CounterCell" customModule="Counter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UeB-fx-IZo" id="ZaA-Hr-Inf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxQ-vu-FLW">
+                                            <rect key="frame" x="155" y="11" width="10.5" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEO-gE-F0D">
+                                            <rect key="frame" x="243" y="7" width="69" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="Increment"/>
+                                            <connections>
+                                                <action selector="increment" destination="UeB-fx-IZo" eventType="touchUpInside" id="A1B-1l-bwg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVc-vU-Ecg">
+                                            <rect key="frame" x="8" y="7" width="76" height="30"/>
+                                            <animations/>
+                                            <state key="normal" title="Decrement"/>
+                                            <connections>
+                                                <action selector="decrement" destination="UeB-fx-IZo" eventType="touchUpInside" id="kqC-wn-qPk"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="eEO-gE-F0D" firstAttribute="centerY" secondItem="ZaA-Hr-Inf" secondAttribute="centerY" id="DsF-E2-0d3"/>
+                                        <constraint firstItem="qVc-vU-Ecg" firstAttribute="centerY" secondItem="ZaA-Hr-Inf" secondAttribute="centerY" id="T2e-op-Cbd"/>
+                                        <constraint firstItem="eEO-gE-F0D" firstAttribute="trailing" secondItem="ZaA-Hr-Inf" secondAttribute="trailingMargin" id="Xpm-E0-B8J"/>
+                                        <constraint firstItem="LxQ-vu-FLW" firstAttribute="centerX" secondItem="ZaA-Hr-Inf" secondAttribute="centerX" id="ahE-QA-r5Z"/>
+                                        <constraint firstItem="qVc-vU-Ecg" firstAttribute="leading" secondItem="ZaA-Hr-Inf" secondAttribute="leadingMargin" id="oLF-wn-SdN"/>
+                                        <constraint firstItem="LxQ-vu-FLW" firstAttribute="centerY" secondItem="ZaA-Hr-Inf" secondAttribute="centerY" id="xFp-IM-tlh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="value" destination="LxQ-vu-FLW" id="Oyo-hi-QHd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JYK-R0-0qq" id="MfV-dO-hPS"/>
+                            <outlet property="delegate" destination="JYK-R0-0qq" id="SRk-M8-Jgg"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Counters" id="eti-sr-cce"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="529-qo-1Nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="337"/>
+            <point key="canvasLocation" x="132" y="321"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tQo-7R-icT">
+            <objects>
+                <navigationController id="nih-0T-E48" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e68-pG-lig">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JYK-R0-0qq" kind="relationship" relationship="rootViewController" id="YqV-pq-lxT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5q-Nv-OjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-373" y="321"/>
         </scene>
     </scenes>
 </document>

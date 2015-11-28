@@ -24,4 +24,5 @@ struct Counter {
     }
     
     typealias Dispatch = Action -> ()
+    
  }
