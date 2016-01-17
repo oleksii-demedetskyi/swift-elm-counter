@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : 0,
+    "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5804AE73-01E9-4E72-916D-AC4E7FFF7BFE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : "swift-elm-counter\/RandomGif\/Carthage\/Checkouts\/BrightFutures\/",
+    "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199" : "swift-elm-counter\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RandomGif",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RandomGif\/RandomGif.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:xNekOIx\/swift-elm-counter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/BrightFutures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93608FFF008CD82ADDFA850BB9C1630FA754586F"
+    }
+  ]
+}

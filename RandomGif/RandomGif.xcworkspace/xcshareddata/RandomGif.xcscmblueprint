@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199" : 0,
+    "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0" : 0,
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : 0,
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F053F3CA-D540-42D3-8E55-FE4907369236",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199" : "swift-elm-counter\/",
+    "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0" : "swift-elm-counter\/RandomGif\/Carthage\/Checkouts\/FLAnimatedImage\/",
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : "swift-elm-counter\/RandomGif\/Carthage\/Checkouts\/BrightFutures\/",
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "swift-elm-counter\/RandomGif\/Carthage\/Checkouts\/BrightFutures\/Carthage\/Checkouts\/Result\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RandomGif",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RandomGif\/RandomGif.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:xNekOIx\/swift-elm-counter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8300BEBC9EAA7EFEBD28EB95F2685CF4B5EDD199"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/BrightFutures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93608FFF008CD82ADDFA850BB9C1630FA754586F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Flipboard\/FLAnimatedImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CADC4D1B031AED4FEFB66A1DCF54AE5FF592E1F0"
+    }
+  ]
+}

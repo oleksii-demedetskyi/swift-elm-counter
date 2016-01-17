@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/Result"]
+	path = RandomGif/Carthage/Checkouts/Result
+	url = https://github.com/antitypical/Result.git
+[submodule "Carthage/Checkouts/BrightFutures"]
+	path = RandomGif/Carthage/Checkouts/BrightFutures
+	url = https://github.com/Thomvis/BrightFutures.git
+[submodule "Carthage/Checkouts/FLAnimatedImage"]
+	path = RandomGif/Carthage/Checkouts/FLAnimatedImage
+	url = https://github.com/Flipboard/FLAnimatedImage.git

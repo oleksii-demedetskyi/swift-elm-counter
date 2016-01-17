@@ -1,0 +1,4 @@
+[submodule "Carthage/Checkouts/BrightFutures"]
+	url = https://github.com/Thomvis/BrightFutures.git
+[submodule "Carthage/Checkouts/Result"]
+	url = https://github.com/antitypical/Result.git
